@@ -2,5 +2,5 @@ So, This is yet one more stage in life we must pass through. Best of luck to us
 
 
 git add *
-git commit
+git commit -m "WHAT I FIXED"
 git push
