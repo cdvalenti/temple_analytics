@@ -23,7 +23,10 @@ West_Point_PA = '19486'
 def organize_data(file_name):
   
   #create empty list to be appended in this function
-  zipcode_info = [['Zip Code', 'Number of Employees', 'Number in Org A', 'Number in Org B', 'Number in Org C', 'Number in Org D', 'Number in Org E', 'Number in Org F', 'Number in Org G', 'Number in Org H', 'Number in Org I', 'Number in Org J', 'Number in Org K', 'Number in Org L', 'Driving Minutes to White House Station, NJ', 'Driving Minutes to Kenilworth, NJ']]
+  zipcode_info = [['Zip Code', 'Number of Employees', 'Number in Org A', 'Number in Org B', 
+  'Number in Org C', 'Number in Org D', 'Number in Org E', 'Number in Org F', 'Number in Org G', 
+  'Number in Org H', 'Number in Org I', 'Number in Org J', 'Number in Org K', 'Number in Org L', 
+  'Driving Minutes to White House Station, NJ', 'Driving Minutes to Kenilworth, NJ', 'Driving Minutes to West Point, PA']]
   
   #open csv file
   f = open(file_name)
@@ -59,7 +62,8 @@ def organize_data(file_name):
       zipcode_info[index].append(zip_count)
   
   #list of organizations for org parsing
-  organizations = ['Org A', 'Org B', 'Org C', 'Org D', 'Org E', 'Org F', 'Org G', 'Org H', 'Org I', 'Org J', 'Org K', 'Org L']
+  organizations = ['Org A', 'Org B', 'Org C', 'Org D', 'Org E', 
+  'Org F', 'Org G', 'Org H', 'Org I', 'Org J', 'Org K', 'Org L']
   
   #for every zipcode, count how many are in each organization append to end of each list
   for org in organizations:
@@ -80,7 +84,7 @@ def organize_data(file_name):
 def calculate_distances(zip_info):
   
   #open a google maps cient
-  gmaps = googlemaps.GoogleMaps('temple_analytics_research_team')
+  gmaps = googlemaps.GoogleMaps('temple_analytics_team')
   
   #for every zip code find length of drive to Whitehouse Station, NJ in minutes
   for index in range(len(zip_info)):
