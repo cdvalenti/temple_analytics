@@ -1,13 +1,13 @@
-## Temple University Analystics Challenge ##
-#### Alexander Arocho, Chiehjeng Chen, Christian D. Valenti ####
-# The largest heading (an <h1> tag)
+## Temple University Analystics Challenge
+#### Alexander Arocho, Chiehjeng Chen, Christian D. Valenti
+------
 
 This repository contains the code and data files used to complete the 2nd annual Temple Analytics Challenge outlined (http://ibit.temple.edu/analytics/).
 
 Our group has specifically decided to take on the Merck Challenge: Understanding a Corporate Move's Impact (http://ibit.temple.edu/analytics/impact-of-a-corporate-move/).
 
-##### For Jay and Alex #####
+##### For Jay and Alex
 To add a change to the repo:
-git add *
-git commit -m "WHAT I FIXED"
-git push
+- git add *
+- git commit -m "description of changes made
+- git push
