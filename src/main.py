@@ -12,6 +12,7 @@
 #import the googlemaps and csv libraries to be used in this project
 import googlemaps
 import csv
+import time
 
 #define a few constants to be used
 file_name ='../data/merck_data.csv'
@@ -119,18 +120,27 @@ def calculate_distances(zip_info):
   
   return zip_info
 
-def calculate_deltas(zip_info):
+def calculate_change(zip_info):
   
+  #for every zipcode
   for index in range(len(zip_info)):
     if index is not 0:
-      change = float(zip_info[index][14]) - float(zip_info[index][15])
+      
+      #subtract Kenilworth Duration from Whitehouse Station
+      change = float(zip_info[index][15]) - float(zip_info[index][14])
+      #append to list
       zip_info[index].append(change)
-      change = float(zip_info[index][14]) - float(zip_info[index][16])
+      
+      #subtract Kenilworth Duration from Whitehouse Station
+      change = float(zip_info[index][16]) - float(zip_info[index][14])
+      #append to list
       zip_info[index].append(change)
 
   return zip_info
-
+  
 def main():
+  
+  start_time = time.time()
   
   #Go through merck's data file and organize zip data
   zip_info = organize_data(file_name)
@@ -139,13 +149,18 @@ def main():
   zip_info = calculate_distances(zip_info)
   
   #use drive durations to find change in drive durations
-  zip_info = calculate_deltas(zip_info)
+  zip_info = calculate_change(zip_info)
   
   #write zip_info to an output csv file
   with open(output_file, "wb") as f:
     writer = csv.writer(f)
     writer.writerows(zip_info)
   
+  #print duration of script out of curiousity
+  end_time = time.time()
+  total_time = end_time - start_time()
+  minutes = total_time/60.0
+  print "It took %.2f minutes to complete the script" % minutes
 
 if __name__ == '__main__':
   main()
