@@ -23,6 +23,7 @@ Issues:
 Possible Solutions:
 * Change zipcodes to latitude and longitude
 * Use Photoshop to add major cities and borders
+
 ------
 ##### For Jay and Alex
 To add a change to the repo:
