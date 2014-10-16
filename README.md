@@ -8,9 +8,9 @@ Our group has specifically decided to take on the Merck Challenge: Understanding
 
 For any questions, feel free to contact Christian Valenti at christian.valenti@temple.edu
 
-Preliminary Heat Map Results
-http://www.openheatmap.com/view.html?map=XviiControversalLallations
-
+Preliminary Heat Map Results:
+* http://www.openheatmap.com/view.html?map=XviiControversalLallations
+* http://www.openheatmap.com/view.html?map=FregataCumbernauldsDiluent
 
 ------
 ##### For Jay and Alex
