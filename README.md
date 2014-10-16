@@ -12,6 +12,6 @@ Our group has specifically decided to take on the Merck Challenge: Understanding
 ------
 ##### For Jay and Alex
 To add a change to the repo:
-- git add *
+- git add --all
 - git commit -m "description of changes made
 - git push

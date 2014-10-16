@@ -1,6 +1,6 @@
 ####################################################################################
 #Temple University Analytics Competition Source Code
-#Submitted to Dr. Joseph Picone for ECE 3822
+#Also submitted to Dr. Joseph Picone for ECE 3822
 #
 #Authors:
 #Christian D. Valenti
@@ -26,7 +26,8 @@ def organize_data(file_name):
   zipcode_info = [['Zip Code', 'Number of Employees', 'Number in Org A', 'Number in Org B', 
   'Number in Org C', 'Number in Org D', 'Number in Org E', 'Number in Org F', 'Number in Org G', 
   'Number in Org H', 'Number in Org I', 'Number in Org J', 'Number in Org K', 'Number in Org L', 
-  'Driving Minutes to White House Station, NJ', 'Driving Minutes to Kenilworth, NJ', 'Driving Minutes to West Point, PA']]
+  'Driving Minutes to White House Station, NJ', 'Driving Minutes to Kenilworth, NJ', 'Driving Minutes to West Point, PA',
+  'Change in Duration for Kenilworth Move', 'Change in Duration for West Point Move']]
   
   #open csv file
   f = open(file_name)
@@ -84,7 +85,7 @@ def organize_data(file_name):
 def calculate_distances(zip_info):
   
   #open a google maps cient
-  gmaps = googlemaps.GoogleMaps('temple_analytics_team')
+  gmaps = googlemaps.GoogleMaps('temple_analytics')
   
   #for every zip code find length of drive to Whitehouse Station, NJ in minutes
   for index in range(len(zip_info)):
@@ -118,6 +119,17 @@ def calculate_distances(zip_info):
   
   return zip_info
 
+def calculate_deltas(zip_info):
+  
+  for index in range(len(zip_info)):
+    if index is not 0:
+      change = float(zip_info[index][14]) - float(zip_info[index][15])
+      zip_info[index].append(change)
+      change = float(zip_info[index][14]) - float(zip_info[index][16])
+      zip_info[index].append(change)
+
+  return zip_info
+
 def main():
   
   #Go through merck's data file and organize zip data
@@ -125,6 +137,9 @@ def main():
   
   #Use zips to calculate distances
   zip_info = calculate_distances(zip_info)
+  
+  #use drive durations to find change in drive durations
+  zip_info = calculate_deltas(zip_info)
   
   #write zip_info to an output csv file
   with open(output_file, "wb") as f:
