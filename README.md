@@ -16,6 +16,13 @@ For any questions, feel free to contact Christian Valenti at christian.valenti@t
 * Weighted by Zip Code Population (Kenilworth, NJ): http://www.openheatmap.com/view.html?map=XviiControversalLallations
 * Weighted by Zip Code Population (West Point, PA): http://www.openheatmap.com/view.html?map=FregataCumbernauldsDiluent
 
+Issues: 
+* Openheatmap does not recognize several zip codes
+* Not able to show cities
+
+Possible Solutions:
+* Change zipcodes to latitude and longitude
+* Use Photoshop to add major cities and borders
 ------
 ##### For Jay and Alex
 To add a change to the repo:
