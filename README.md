@@ -8,9 +8,13 @@ Our group has specifically decided to take on the Merck Challenge: Understanding
 
 For any questions, feel free to contact Christian Valenti at christian.valenti@temple.edu
 
+------
+
 ##### Preliminary Heat Map Results:
-* http://www.openheatmap.com/view.html?map=XviiControversalLallations
-* http://www.openheatmap.com/view.html?map=FregataCumbernauldsDiluent
+* Per Zip Code Kenilworth, NJ Move: http://www.openheatmap.com/view.html?map=ConcubinarianIntercommunionXenic
+* Per Zip Code West Point, PA Move: http://www.openheatmap.com/view.html?map=SubcaudateCystogenousPygmyism
+* Weighted by Zip Code Population (Kenilworth, NJ): http://www.openheatmap.com/view.html?map=XviiControversalLallations
+* Weighted by Zip Code Population (West Point, PA): http://www.openheatmap.com/view.html?map=FregataCumbernauldsDiluent
 
 ------
 ##### For Jay and Alex
