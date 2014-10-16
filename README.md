@@ -10,7 +10,9 @@ For any questions, feel free to contact Christian Valenti at christian.valenti@t
 
 ------
 
-##### Preliminary Heat Map Results:
+#### Preliminary Heat Map Results
+
+Maps:
 * Per Zip Code Kenilworth, NJ Move: http://www.openheatmap.com/view.html?map=ConcubinarianIntercommunionXenic
 * Per Zip Code West Point, PA Move: http://www.openheatmap.com/view.html?map=SubcaudateCystogenousPygmyism
 * Weighted by Zip Code Population (Kenilworth, NJ): http://www.openheatmap.com/view.html?map=XviiControversalLallations
