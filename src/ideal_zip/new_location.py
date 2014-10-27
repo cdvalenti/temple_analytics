@@ -83,7 +83,7 @@ def find_zips():
   
   f.close()
   
-  #if previous data exists, go through it and enter it into possible ideal locations list
+  #if previous zipcode data exists, go through it and enter it into possible ideal locations list
   try:
     print "opening previous results.."
     #open output file from previous run
@@ -122,11 +122,20 @@ def get_avg_time(employee_zips, local_zips):
   #open a google maps cient
   gmaps = googlemaps.GoogleMaps(api_key)
   
-  #create header for error list
-  error_zips = [['Start Zip', 'End Zip','Employees','Error Message']]
+  #if error file already exists, load it into error list
+  try:
+    f = open(error_file, "r")
+    prev_errors = csv.reader(f)
+    error_zips = list()
+    for row in prev_errors:
+      error_zips.append(row)
+  except:
+    #create header for error list
+    error_zips = [['Start Zip', 'End Zip','Employees','Error Message','Duration']]
+  
   #initialize count and define continuous error limit
   error_count = 0
-  error_limit = 20
+  error_limit = 10
   
   #Go through every possible ideal zip
   for zipcode in local_zips:

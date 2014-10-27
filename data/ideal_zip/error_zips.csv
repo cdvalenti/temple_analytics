@@ -1,0 +1,11 @@
+Start Zip,End Zip,Employees,Error Message,Duration
+10014,8822,1,,63.17
+7945,8886,7,,46.13
+7945,7901,7,,29.57
+8846,7662,6,<class 'googlemaps.GoogleMapsError'>,
+8846,8812,6,<class 'googlemaps.GoogleMapsError'>,
+7440,7747,1,<class 'urllib2.URLError'>,
+7023,8540,10,<class 'googlemaps.GoogleMapsError'>,
+08560,07885,3.0,<class 'googlemaps.GoogleMapsError'>
+07869,07885,9.0,<class 'googlemaps.GoogleMapsError'>
+07432,08882,4.0,<class 'googlemaps.GoogleMapsError'>
