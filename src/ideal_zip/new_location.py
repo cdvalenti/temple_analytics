@@ -191,7 +191,7 @@ def get_avg_time(employee_zips, local_zips):
               #save files
               with open(output_file, "wb") as f:
                 writer = csv.writer(f)
-                writer.writerows(error_zips)
+                writer.writerows(local_zips)
               
               with open(error_file, "wb") as f:
                 writer = csv.writer(f)
