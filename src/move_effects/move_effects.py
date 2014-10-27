@@ -3,9 +3,16 @@
 #Also submitted to Dr. Joseph Picone for ECE 3822
 #
 #Authors:
-#Christian D. Valenti
-#Alexander Arocho
-#Chiehjeng Chen
+# Christian D. Valenti
+# Alexander Arocho
+# Chiehjeng Chen
+#
+#Description of script:
+#   1. Read supplied csv file from merck (merck_data.csv)
+#   2. Reorganizes the data by zipcode, counts number of employees in each zip and in each organization
+#   3. For every zipcode, find the drive duration in minutes to Whithouse Station, Kenilworth, and West Point zipcodes
+#   4. For every zipcode, find the change in drive duration for move to Kenilworth and West Point, from Whitehouse Station
+#   5. Write results to a new csv file (merck_output.csv)
 #
 ###################################################################################
 
@@ -14,12 +21,17 @@ import googlemaps
 import csv
 import time
 
-#define a few constants to be used
-file_name ='../data/merck_data.csv'
-output_file = '../data/merck_output.csv'
+#define a file names
+file_name ='../../data/merck_data.csv'
+output_file = '../../data/move_effects/merck_output.csv'
+
+#zip codes for move locations
 Whitehouse_Station_NJ = '08889'
 Kenilworth_NJ = '07033'
 West_Point_PA = '19486'
+
+#google maps api key
+api_key = 'AIzaSyBkfNH9_w6wPbWrzmSnxxVXvOvzuVj0b7s'
 
 def organize_data(file_name):
   
@@ -85,8 +97,8 @@ def organize_data(file_name):
 
 def calculate_distances(zip_info):
   
-  #open a google maps cient
-  gmaps = googlemaps.GoogleMaps('temple_analytics')
+  #open a google maps client
+  gmaps = googlemaps.GoogleMaps(api_key)
   
   #for every zip code find length of drive to Whitehouse Station, NJ in minutes
   for index in range(len(zip_info)):
