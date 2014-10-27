@@ -11,8 +11,7 @@ For any questions, feel free to contact Christian Valenti at christian.valenti@t
 ------
 
 #### Effects of Move on Driving Duration
-**Method:**
-Python script (src/move_effects/move_effects.py) to determine the change in drive duration for every zip code possessed by an employee. The script reorganizes the data given by Merck to be ordered by zipcode. Each zip code has the following attributes:
+**Method:** Python script (src/move_effects/move_effects.py) to determine the change in drive duration for every zip code possessed by an employee. The script reorganizes the data given by Merck to be ordered by zipcode. Each zip code has the following attributes:
 * Number of Employees
 * Number of Employees in Organization (A - L)
 * Driving Minutes to Whitehouse Station, NJ (zipcode: 08889)
@@ -22,8 +21,7 @@ Python script (src/move_effects/move_effects.py) to determine the change in driv
 * Change in minutes for move to West Point, PA
 To obtain driving minutes, the googlemaps (https://pypi.python.org/pypi/googlemaps/) python library was utilized. This data is then saved to a .csv (data/move_effects/merck_output.csv).
 
-**Open Heat Map**
-Open Heat Map (openheatmap.com) was used to display the useable information from above into maps.
+**Open Heat Map** (openheatmap.com) was used to display the useable information from above into maps.
 The output file above (data/move_effects/merck_output.csv) was manually reorganized in excel to a format that could be understood by the openheatmap website.
 Four (4) sets of maps were created:
 * Change in duration per zip code (Kenilworth, NJ)
@@ -47,11 +45,3 @@ The difficult task of finding an ideal location for a Corporate move included ma
 The first task was to find the zip codes local to most of the employees. To determine this, we decided the drive duration to the original location (Whithouse Station) had to be within one hour.
 Secondly, we had to determine which employees actually drove to work. Since many of the employee zipcodes were very far from the original location, it was fair to assume many worked remotely or from home. We decided that if the drive duration for the original location was an hour or less, they most likely drove to work.
 With two sets of zipcodes, we then had to calculate the drive time from every possible driving zipcode to every possible ideal location zipcode (nearly 85,000 googlemaps requests). This was acheived once again utilizing the googlemaps library in a python script (src/ideal_zip/new_location.py). With such a large number of requests, an official Google API key had to be obtained to increase request limits. Even then, exception handling had to be incorporated to cath request failures due to timeouts and limits exceeded. Once a limit is exceeded, we had to wait 24 hours to re start the code. We didn't want to restart the process, so the code saves the data from the previous run, uploads it into a list, and starts where it left off. This prevented needed the code to finsih completely in one run.
-
-
-------
-##### For Jay and Alex
-To add a change to the repo:
-- git add --all
-- git commit -m "description of changes made"
-- git push
