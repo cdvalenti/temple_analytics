@@ -1,11 +1,50 @@
 Start Zip,End Zip,Employees,Error Message,Duration
-10014,8822,1,,63.17
-7945,8886,7,,46.13
-7945,7901,7,,29.57
-8846,7662,6,<class 'googlemaps.GoogleMapsError'>,
-8846,8812,6,<class 'googlemaps.GoogleMapsError'>,
-7440,7747,1,<class 'urllib2.URLError'>,
-7023,8540,10,<class 'googlemaps.GoogleMapsError'>,
-08560,07885,3.0,<class 'googlemaps.GoogleMapsError'>
-07869,07885,9.0,<class 'googlemaps.GoogleMapsError'>
-07432,08882,4.0,<class 'googlemaps.GoogleMapsError'>
+10014,08822,1,,63.17
+07945,08886,7,,46.13
+07945,07901,7,,29.57
+08846,07662,6,<class 'googlemaps.GoogleMapsError'>,51.14
+08846,08812,6,<class 'googlemaps.GoogleMapsError'>,8.72
+07440,07747,1,<class 'urllib2.URLError'>,55.1
+07023,08540,10,<class 'googlemaps.GoogleMapsError'>,46
+08560,07885,3,<class 'googlemaps.GoogleMapsError'>,75.18
+07869,07885,9,<class 'googlemaps.GoogleMapsError'>,9.22
+07432,08882,4,<class 'googlemaps.GoogleMapsError'>,60.68
+07753,07931,2,<class 'googlemaps.GoogleMapsError'>,56.92
+07045,07931,2,<class 'googlemaps.GoogleMapsError'>,32.9
+07045,07945,2,<class 'googlemaps.GoogleMapsError'>,27.6
+07961,07945,1,<class 'googlemaps.GoogleMapsError'>,13.43
+18954,07945,1,<class 'googlemaps.GoogleMapsError'>,74.62
+07045,07076,2,<class 'googlemaps.GoogleMapsError'>,37.82
+07961,07076,1,<class 'googlemaps.GoogleMapsError'>,32.1
+07921,08850,10,<class 'googlemaps.GoogleMapsError'>,28.38
+07090,07067,38,<class 'googlemaps.GoogleMapsError'>,30.43
+07930,07067,8,<class 'googlemaps.GoogleMapsError'>,46.72
+07078,07067,7,<class 'googlemaps.GoogleMapsError'>,26.35
+07852,07067,1,<class 'googlemaps.GoogleMapsError'>,51.47
+07961,07940,1,<class 'googlemaps.GoogleMapsError'>,8.97
+07059,18042,23,<class 'urllib2.URLError'>,43.72
+07852,18042,1,<class 'googlemaps.GoogleMapsError'>,56.72
+08560,18925,3,<class 'googlemaps.GoogleMapsError'>,24.45
+08560,08559,3,<class 'googlemaps.GoogleMapsError'>,20.58
+08886,18901,30,<class 'googlemaps.GoogleMapsError'>,51.17
+07090,18901,38,<class 'googlemaps.GoogleMapsError'>,74.18
+07045,18901,2,<class 'googlemaps.GoogleMapsError'>,77.02
+07869,18901,9,<class 'googlemaps.GoogleMapsError'>,80.08
+07961,18901,1,<class 'googlemaps.GoogleMapsError'>,67.05
+07852,18901,1,<class 'googlemaps.GoogleMapsError'>,79.88
+18966,18052,2,<class 'googlemaps.GoogleMapsError'>,73.42
+07961,18052,1,<class 'googlemaps.GoogleMapsError'>,70.55
+08560,07803,3,<class 'googlemaps.GoogleMapsError'>,74.13
+07869,07002,9,<class 'googlemaps.GoogleMapsError'>,43.48
+07869,18929,9,<class 'googlemaps.GoogleMapsError'>,82.68
+07961,18929,1,<class 'googlemaps.GoogleMapsError'>,69.65
+07961,08857,1,<class 'googlemaps.GoogleMapsError'>,46.33
+07853,18106,10,<class 'googlemaps.GoogleMapsError'>,62.95
+07076,18106,19,<class 'googlemaps.GoogleMapsError'>,76.35
+07040,07946,4,<class 'googlemaps.GoogleMapsError'>,20
+07040,08859,4,<class 'googlemaps.GoogleMapsError'>,28.82
+07040,07751,4,<class 'googlemaps.GoogleMapsError'>,39.85
+07067,07440,11,<type 'exceptions.KeyboardInterrupt'>,43.75
+07834,07032,11,<class 'urllib2.URLError'>,26.68
+08823,07032,4,<class 'urllib2.URLError'>,43.23
+18064,07032,8,<class 'urllib2.URLError'>,77.37

@@ -45,7 +45,6 @@ The difficult task of finding an ideal location for a Corporate move included ma
 The first task was to find the zip codes local to most of the employees. To determine this, we decided the drive duration to the original location (Whithouse Station) had to be within one hour.
 Secondly, we had to determine which employees actually drove to work. Since many of the employee zipcodes were very far from the original location, it was fair to assume many worked remotely or from home. We decided that if the drive duration for the original location was an hour or less, they most likely drove to work.
 With two sets of zipcodes, we then had to calculate the drive time from every possible driving zipcode to every possible ideal location zipcode (nearly 85,000 googlemaps requests). This was acheived once again utilizing the googlemaps library in a python script (src/ideal_zip/new_location.py). With such a large number of requests, an official Google API key had to be obtained to increase request limits. Even then, exception handling had to be incorporated to cath request failures due to timeouts and limits exceeded. Once a limit is exceeded, we had to wait 24 hours to re start the code. We didn't want to restart the process, so the code saves the data from the previous run, uploads it into a list, and starts where it left off. This prevented needed the code to finsih completely in one run.
-**RESULTS** : http://www.openheatmap.com/view.html?map=EmpowermentsSphygmophonesOxydasic
 
 ------
 

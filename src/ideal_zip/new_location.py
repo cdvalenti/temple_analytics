@@ -34,7 +34,6 @@
 #
 ####################################################################################
 
-
 #import the googlemaps and csv libraries to be used in this project
 import googlemaps
 import csv
@@ -46,7 +45,8 @@ import sys
 input_file = '../../data/move_effects/merck_output.csv'
 output_file = '../../data/ideal_zip/best_zip.csv'
 error_file = '../../data/ideal_zip/error_zips.csv'
-api_key = 'AIzaSyBkfNH9_w6wPbWrzmSnxxVXvOvzuVj0b7s'
+#api_key = 'AIzaSyBkfNH9_w6wPbWrzmSnxxVXvOvzuVj0b7s'
+api_key = 'AIzaSyC3vUwqxmcQxBvc5sMd91cRjXYE2iNHcyY'
 
 #sounds to be used for notifications
 ding = '../../sounds/ding.wav'
@@ -124,6 +124,7 @@ def get_avg_time(employee_zips, local_zips):
   
   #if error file already exists, load it into error list
   try:
+    print "uploading previous error list"
     f = open(error_file, "r")
     prev_errors = csv.reader(f)
     error_zips = list()
@@ -142,7 +143,8 @@ def get_avg_time(employee_zips, local_zips):
     
     #if data isnt already there
     if len(zipcode) < 2:
-    
+      
+      print ""
       print "Driving Durations if location was moved to " + zipcode[0]
       
       #initialize time and commuters for possible ideal zip
