@@ -1,12 +1,6 @@
 ## Temple University Analystics Challenge
 ##### Authors: Alexander Arocho, Chiehjeng Chen, Christian D. Valenti
 
-#### UPDATE!!!!
-Out of 130 entries, we were chosen as 1 of the 20 finalists and recieved SECOND PLACE!!
-
-To see the graphic we presented at the competetion click here: https://github.com/cdvalenti/temple_analytics/tree/master/results/final
-
-------
 
 This repository contains the code and data files used to complete the 2nd Annual Temple Analytics Challenge outlined (http://ibit.temple.edu/analytics/).
 
@@ -15,8 +9,6 @@ Our group has specifically decided to take on the Merck Challenge: Understanding
 For any questions, feel free to contact Christian Valenti at christian.valenti@temple.edu
 
 ------
-####
-
 
 #### Effects of Move on Driving Duration
 **Method:** Python script (src/move_effects/move_effects.py) to determine the change in drive duration for every zip code possessed by an employee. The script reorganizes the data given by Merck to be ordered by zipcode. Each zip code has the following attributes:
