@@ -2,7 +2,8 @@
 ##### Authors: Alexander Arocho, Chiehjeng Chen, Christian D. Valenti
 
 #### UPDATE!!!!
-Out of 130 entries, we were chosen as 1 of the 20 finalists and recieved SECOND PLACE!!
+Out of 130 entries, we were chosen as 1 of the 20 finalists. All of the finalists performed a 5 minute presentation to a panel of executives from companies such as QVC, Merck, and NBCUniversal. 
+The panel of executives decided our graphic and presentation deserved SECOND PLACE!!
 
 To see the graphic we presented at the competetion click here: http://ibit.temple.edu/analytics/files/2014/11/ChenFull.png
 
