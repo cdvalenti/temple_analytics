@@ -21,7 +21,7 @@ import pygame
 
 #set up google maps
 api_key = 'AIzaSyBkfNH9_w6wPbWrzmSnxxVXvOvzuVj0b7s'
-gmaps = googlemaps.GoogleMaps(api_key)
+gmaps = googlemaps.GoogleMaps(api)
 
 #sounds to be used for notifications
 ding = '../../sounds/ding.wav'

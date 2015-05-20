@@ -4,7 +4,7 @@
 #### UPDATE!!!!
 Out of 130 entries, we were chosen as 1 of the 20 finalists and recieved SECOND PLACE!!
 
-To see the graphic we presented at the competetion click here: https://github.com/cdvalenti/temple_analytics/tree/master/results/final
+To see the graphic we presented at the competetion click here: http://ibit.temple.edu/analytics/files/2014/11/ChenFull.png
 
 ------
 
@@ -58,4 +58,5 @@ With two sets of zipcodes, we then had to calculate the drive time from every po
 ------
 
 ###Results
-Results are currently in draft form and can be seen in results/analytic_draft_pdf.pptx
+Out of 130 entries, our team won second place. The final graphic can be found at
+http://ibit.temple.edu/analytics/files/2014/11/ChenFull.png
