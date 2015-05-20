@@ -9,7 +9,7 @@ To see the graphic we presented at the competetion click here: http://ibit.templ
 
 ------
 
-This repository contains the code and data files used to complete the 2nd Annual Temple Analytics Challenge outlined (http://ibit.temple.edu/analytics/).
+**ABOUT:** This repository contains the code and data files used to complete the 2nd Annual Temple Analytics Challenge outlined (http://ibit.temple.edu/analytics/).
 
 Our group has specifically decided to take on the Merck Challenge: Understanding a Corporate Move's Impact (http://ibit.temple.edu/analytics/impact-of-a-corporate-move/).
 
@@ -46,10 +46,10 @@ Map Links:
 
 Major cities were added to the maps in an image editor to help the viewer.
 
-####Organizational Impact of a Move
+#### Organizational Impact of a Move
 Using the output file from  before (data/move_effects/merck_output.csv), the organizational data was manipulated in python (src/org_data/org_data_kenilworth.py and src/org_data/org_data/westpoint.py) to show the effects that each move had specifically on organizations. This data was then organized into tables in excel and presented.
 
-####Finding an Ideal Location
+#### Finding an Ideal Location
 The difficult task of finding an ideal location for a Corporate move included many steps. 
 The first task was to find the zip codes local to most of the employees. To determine this, we decided the drive duration to the original location (Whithouse Station) had to be within one hour.
 Secondly, we had to determine which employees actually drove to work. Since many of the employee zipcodes were very far from the original location, it was fair to assume many worked remotely or from home. We decided that if the drive duration for the original location was an hour or less, they most likely drove to work.
